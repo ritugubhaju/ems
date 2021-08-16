@@ -8,7 +8,8 @@
             @include('backend.exam.partials.form',['header' => 'Create a exam'])
             </form>
         </div>
-    </section>
+
+</section>
 @stop
 
 

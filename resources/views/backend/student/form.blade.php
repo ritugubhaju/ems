@@ -28,7 +28,7 @@
                 <div class="col-xl-6 col-lg-8">
                     <div class="text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.01s" style="animation-delay: 0.01s; opacity: 1;">
                         <div class="heading_s1 text-center">
-                            <h2>Create Customer</h2>
+                            <h2>Student Register</h2>
                         </div>
                         <div class="small_divider"></div>
                     </div>
@@ -42,18 +42,41 @@
                                
                                 <div class="padding_eight_all">
                                     <div class="field_form">
-                                        <form method="POST" name="enq" action="{{route('customerform.store')}}">
+                                        <form method="POST" name="enq" action="{{route('studentform.store')}}">
                                             @csrf
                                             <div class="row">
                                                 <div class="form-group col-12">
-                                                    <input required="required" placeholder="Enter Name" id="first-name" class="form-control" name="name" type="text">
+                                                    <input required="required" placeholder="Enter Name" id="name" class="form-control" name="name" type="text">
                                                 </div>
+
                                                 <div class="form-group col-12">
                                                     <input required="required" placeholder="Enter Email" id="email" class="form-control" name="email" type="email">
                                                 </div>
+
                                                 <div class="form-group col-12">
                                                     <input required="required" placeholder="Enter Password" id="password" class="form-control" name="password" type="password">
                                                 </div>
+
+                                                <div class="form-group col-12">
+                                                    <input required="required" placeholder="Enter Class" id="class" class="form-control" name="class" type="class">
+                                                </div>
+
+                                                <div class="form-group col-12">
+                                                    <input required="required" placeholder="Enter Gender" id="gender" class="form-control" name="gender" type="gender">
+                                                </div>
+
+                                                <div class="form-group col-12">
+                                                    <input required="required" placeholder="Enter Phone" id="phone" class="form-control" name="phone" type="phone">
+                                                </div>
+
+                                                <div class="form-group col-12">
+                                                    <input required="required" placeholder="Enter Parent Name" id="parent_name" class="form-control" name="parent_name" type="parent_name">
+                                                </div>
+
+                                                <div class="form-group col-12">
+                                                    <input required="required" placeholder="Enter Parent Number" id="parent_num" class="form-control" name="parent_num" type="parent_num">
+                                                </div>
+
                                                 <div class="col-lg-12">
                                                     <button type="submit" title="Submit Your Message!" class="btn btn-default" name="submit" value="Submit">Submit</button>
                                                 </div>

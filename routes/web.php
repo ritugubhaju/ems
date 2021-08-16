@@ -56,14 +56,16 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
     });
 
-    
+
+    Route::get('studentform', 'Backend\StudentController@create')->name('studentform');
+    Route::post('studentform/store', 'Backend\StudentController@store')->name('studentform.store');
 });
 
 Route::get('', 'Frontend\FrontendController@homepage')->name('homepage');
 
 
-Route::get('customerform', 'Backend\CustomerController@customerForm')->name('customerform');
-Route::post('customerform/store', 'Backend\CustomerController@store')->name('customerform.store');
+
+
 
 
 
